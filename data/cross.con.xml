@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- http://sumo-sim.org/userdoc/Networks/Building_Networks_from_own_XML-descriptions.html -->
+<connections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo-sim.org/xsd/connections_file.xsd">
+	<!-- OESTE -->
+	<connection from="1i" to="2o" fromLane="0" toLane="0"/>
+	<!--<connection from="1i" to="2o" fromLane="1" toLane="0"/>
+	<connection from="1i" to="2o" fromLane="0" toLane="1"/>--><!-- Impedir que carros troquem de faixa assim que passarem no sinal -->
+	<connection from="1i" to="2o" fromLane="1" toLane="1"/>
+
+	<connection from="1i" to="3o" fromLane="0" toLane="0"/>
+	<connection from="1i" to="3o" fromLane="0" toLane="1"/>
+	<!--<connection from="1i" to="3o" fromLane="1" toLane="0"/>
+	<connection from="1i" to="3o" fromLane="1" toLane="1"/>-->
+
+	<!--<connection from="1i" to="4o" fromLane="0" toLane="0"/>
+	<connection from="1i" to="4o" fromLane="0" toLane="1"/>-->
+	<connection from="1i" to="4o" fromLane="1" toLane="0"/>
+	<connection from="1i" to="4o" fromLane="1" toLane="1"/>
+
+	<!-- ============================================== -->
+
+	<!-- LESTE -->
+	<connection from="2i" to="1o" fromLane="0" toLane="0"/>
+	<!--<connection from="2i" to="1o" fromLane="0" toLane="1"/>
+	<connection from="2i" to="1o" fromLane="1" toLane="0"/>-->
+	<connection from="2i" to="1o" fromLane="1" toLane="1"/>
+
+	<!--<connection from="2i" to="3o" fromLane="0" toLane="0"/>
+	<connection from="2i" to="3o" fromLane="0" toLane="1"/>-->
+	<connection from="2i" to="3o" fromLane="1" toLane="0"/>
+	<connection from="2i" to="3o" fromLane="1" toLane="1"/>
+
+	<connection from="2i" to="4o" fromLane="0" toLane="0"/>
+	<connection from="2i" to="4o" fromLane="0" toLane="1"/>
+	<!--<connection from="2i" to="4o" fromLane="1" toLane="0"/>
+	<connection from="2i" to="4o" fromLane="1" toLane="1"/>-->
+
+	<!-- ============================================== -->
+	
+	<!-- SUL -->
+	<connection from="3i" to="4o" fromLane="0" toLane="0"/>
+	<!--<connection from="3i" to="4o" fromLane="0" toLane="1"/>
+	<connection from="3i" to="4o" fromLane="1" toLane="0"/>-->
+	<connection from="3i" to="4o" fromLane="1" toLane="1"/>
+
+	<!--<connection from="3i" to="1o" fromLane="0" toLane="0"/>
+	<connection from="3i" to="1o" fromLane="0" toLane="1"/>-->
+	<connection from="3i" to="1o" fromLane="1" toLane="0"/>
+	<connection from="3i" to="1o" fromLane="1" toLane="1"/>
+
+	<connection from="3i" to="2o" fromLane="0" toLane="0"/>
+	<connection from="3i" to="2o" fromLane="0" toLane="1"/>
+	<!--<connection from="3i" to="2o" fromLane="1" toLane="0"/>
+	<connection from="3i" to="2o" fromLane="1" toLane="1"/>-->
+
+	<!-- ============================================== -->
+	
+	<!-- NORTE -->
+	<connection from="4i" to="3o" fromLane="0" toLane="0"/>
+	<!--<connection from="4i" to="3o" fromLane="0" toLane="1"/>
+	<connection from="4i" to="3o" fromLane="1" toLane="0"/>-->
+	<connection from="4i" to="3o" fromLane="1" toLane="1"/>
+
+	<connection from="4i" to="1o" fromLane="0" toLane="0"/>
+	<connection from="4i" to="1o" fromLane="0" toLane="1"/>
+	<!--<connection from="4i" to="1o" fromLane="1" toLane="0"/>
+	<connection from="4i" to="1o" fromLane="1" toLane="1"/>--><!-- Retirei por conta do problema de conflito na hora de virar -->
+
+	<!--<connection from="4i" to="2o" fromLane="0" toLane="0"/>
+	<connection from="4i" to="2o" fromLane="0" toLane="1"/>-->
+	<connection from="4i" to="2o" fromLane="1" toLane="0"/>
+	<connection from="4i" to="2o" fromLane="1" toLane="1"/>
+</connections>
